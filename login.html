@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Internscope</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="Responsive.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="Assets/Courses/Company_Logo/img.png" alt="Internscope">
+            </div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="internships.html">Training and Internships</a></li>
+                <li><a href="jobdetails.html">Jobs</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a class="active" href="login.html">Employer Login</a></li>
+                <li><a href="my_account.html">My Account</a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+            <div id="mobile">
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+        </nav>
+    </header>
+    <div class="search-container">
+        <h2><span>Over 1200 + </span>jobs and internships are waiting for you!!!</h2>
+        <input type="text" id="searchInput" placeholder="Search internships, companies...">
+        <button>Search</button>
+        <ul class="features">
+            <li><span>1200+</span><b>Available Jobs</b></li>
+            <li><span>650+</span> <b>Employers</b></li>
+            <li><span>1500+</span><b>CV's & Resume's</b></li>
+        </ul>
+    </div>
+    <main>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="first name">First Name:</label>
+            <input type="first name" id="first name" required>
+            <label for="last name">Last Name:</label>
+            <input type="last name" id="last name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <label for="confirm password">Confirm Password:</label>
+            <input type="password" id="confirm password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </main>
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 VM3 Tech Solutions LLP. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

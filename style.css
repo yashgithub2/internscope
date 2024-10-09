@@ -1,0 +1,509 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white color: #fff;
+    padding: 10px 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    padding: 0px 20px;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 28px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 40px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+
+.search-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    background: url('Assets/search_background.jpg');
+}
+
+.search-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    padding: 10px;
+    width: 70%;
+    max-width: 400px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #2317cb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.search-container .features {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-container .features li {
+    margin: 0 15px;
+    list-style: none;
+    text-align: center;
+}
+
+.search-container .features span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-container .features b {
+    display: block;
+    margin-top: 5px;
+}
+
+
+
+.testimonial-carousel {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.testimonial-carousel .testimonial {
+    display: none;
+}
+
+.testimonial-carousel .testimonial.active {
+    display: block;
+}
+
+.testimonial-carousel p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.testimonial-carousel h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.carousel-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.carousel-controls button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 span:hover {
+    color: rgb(255, 111, 0);
+}
+
+
+.features {
+    text-align: center;
+}
+
+.features li {
+    padding: 20px 25px;
+}
+
+.features span:hover {
+    color: rgb(255, 145, 0);
+}
+
+#applyButton {
+    padding: 10px 20px;
+    background-color: #005bb5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.internship-card {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+div img {
+    float: right;
+}
+
+.internship-card:hover {
+    background-color: #dddde4;
+
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #0073e6;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    display: block;
+    margin: auto;
+}
+
+button.normal:hover {
+    background-color: white;
+}
+
+body {
+    background-color: rgb(222, 233, 229);
+}
+
+
+
+/* Job Details Page */
+main h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+main p,
+main ul {
+    margin-bottom: 10px;
+}
+
+main ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+main button {
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Forms (Login & Register) */
+form {
+    width: 300px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005bb5;
+}
+
+/*training courses*/
+#course {
+    text-align: center;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#course .courses {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#course .courses:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+
+}
+
+#course .courses img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.courses button {
+    float: right;
+    background-color: #0073e6;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin: 16px 0;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.courses button:hover {
+    background-color: white;
+    color: black;
+}
+
+.description {
+    text-align: start;
+    padding: 10px 0;
+}
+
+
+.description span {
+    color: #606063;
+    font-size: 12px;
+}
+
+
+.description h5 {
+    padding: 3px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+.description i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+
+.description h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+
+.container {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.container span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111214;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* Testimonial */
+.testimonial-carousel {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.testimonial.active {
+    display: block;
+    opacity: 1;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #333;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    color: #555;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#prev-btn,
+#next-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+    background-color: #0056b3;
+}
